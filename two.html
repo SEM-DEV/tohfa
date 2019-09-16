@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+ <link rel="stylesheet" href="style2.css">
+ </head>
+ <style>
+.clicktest {
+background-color: #eded74;
+    font-family: 'Scheherazade', serif;
+    cursor: pointer;
+    padding: auto;
+	position: fixed;
+    width: auto;
+	bottom: 10px;
+	right: 5px;
+    border: none;
+    outline: none;
+    font-size: 23px;
+    transition: 0.4s;
+	margin-top: 10px;
+	border-radius: 8px;
+}
+.clicktest:hover {
+    background-color: #bcc90e; 
+}
+.clicktest1 {
+  background: url(z10.png) center no-repeat;
+   
+   
+    
+    
+    border: none;
+    cursor: pointer;
+	position: fixed;
+    height: 30px;
+	width: 30px;
+	
+	bottom: 10px;
+	left: 10px;
+}
+.clicktest:hover1 {
+    background-color: #bcc90e; 
+}
+.clicktest2 {
+  background: url(z2.png) center no-repeat;
+   
+   
+    
+    
+    border: none;
+    cursor: pointer;
+	position: fixed;
+    height: 30px;
+	width: 30px;
+	
+	bottom: 10px;
+	left: 50px;
+}
+.clicktest:hover2 {
+    background-color: #bcc90e; 
+}
+.clicktest3 {
+  background: url(z11.png) center no-repeat;
+   
+   
+    
+    
+    border: none;
+    cursor: pointer;
+	position: fixed;
+    height: 30px;
+	width: 30px;
+	
+	bottom: 10px;
+	left: 85px;
+}
+.clicktest4 {
+  background: url(z12.png) center no-repeat;
+   
+   
+    
+    
+    border: none;
+    cursor: pointer;
+	position: fixed;
+    height: 30px;
+	width: 30px;
+	
+	bottom: 10px;
+	left: 120px;
+}
+.clicktest:hover3 {
+    background-color: #bcc90e; 
+}
+.clicktest5 {
+ background-color: #eded74;
+    font-family: 'Scheherazade', serif;
+    cursor: pointer;
+    padding: auto;
+	
+    width: auto;
+	
+	
+    border: none;
+    outline: none;
+    font-size: 23px;
+    transition: 0.4s;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 8px; 
+   
+   
+    
+  
+
+  
+	
+	
+}
+.clicktest5:hover {
+    background-color: #bcc90e; 
+}
+.sidenav {
+    height: 90%;
+	line-height: 110%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    bottom: 25px;
+	border-right: 1px solid #bcc90e;
+	border-bottom: 1px solid #bcc90e;
+	border-top: 1px solid #bcc90e;
+	
+    left: 0;
+    background-color: #ffffe0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    text-align:center;
+}
+.sidenav a {
+    padding: 1px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+	
+
+}
+
+.sidenav a:hover{
+    color: red;
+}
+.sidenav1 {
+    height: auto;
+	line-height: 110%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    bottom: 60px;
+	border-right: 1px solid #bcc90e;
+	border-bottom: 1px solid #bcc90e;
+	border-top: 1px solid #bcc90e;
+	
+    left: 0;
+    background-color: #ffffe0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    text-align:center;
+}
+.sidenav1 a {
+    padding: 1px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+	
+
+}
+
+.sidenav1 a:hover{
+    color: red;
+}
+.puti{
+width: 95%;
+text-align: center;
+}
+</style>
+<body>
+
+
+<div class="testhall" id="testhall">
+
+<div class="walid" id="1" onclick="fofo1()"style="text-align: right; cursor: pointer;">1-&nbsp;&nbsp;يَقُـــــولُ رَاجِــــــي رَحْمَــــــةِ الْغَفُـــــــورِ</div>
+<div class="walid" id="2" onclick="fofo2()"style="text-align: left; cursor: pointer;">دَوْمًـــا سُلَيْمَـــــانُ هُــــوَ الْجَمْـــــزُورِي</div>
+<div class="walid" id="3" onclick="fofo3()"style="text-align: right; cursor: pointer;">2-&nbsp;&nbsp;الْحَمْــــــدُ لِلَّــــــــهِ مُصَلِّيًـــــــا عَـــــــــلَى</div>
+<div class="walid" id="4" onclick="fofo4()"style="text-align: left; cursor: pointer;">مُحَمَّـــــــدٍ وَآلِــــــــهِ وَمَــــــــنْ تَـــــــــــلَا</div>
+<div class="walid" id="5" onclick="fofo5()"style="text-align: right; cursor: pointer;">3-&nbsp;&nbsp;وَبَعْـــــــدُ هَـــــــذَا النَّظْـــــــمُ لِلْمُرِيـــــــدِ</div>
+<div class="walid" id="6" onclick="fofo6()"style="text-align: left; cursor: pointer;">فِـــي النُّـــــونِ وَالتَّنْوِيــــــنِ وَالْمُــــــدُودِ</div>
+<div class="walid" id="7" onclick="fofo7()"style="text-align: right; cursor: pointer;">4-&nbsp;&nbsp;سَمَّيْتُــــــــــهُ بِتُحْفَــــــــــــةِ الْأَطْفَـــــــــالِ</div>
+<div class="walid" id="8" onclick="fofo8()"style="text-align: left; cursor: pointer;">عَـنْ شَيْخِنَـــــا الْمَيْهِــــيِّ ذِي الْكَمَــــالِ</div>
+<div class="walid" id="9" onclick="fofo9()"style="text-align: right; cursor: pointer;">5-&nbsp;&nbsp;أَرْجُــــــو بِـــــهِ أَنْ يَنفَــــــــعَ الطُّلَّابَــــــــا</div>
+<div class="walid" id="10" onclick="fofo10()"style="text-align: left; cursor: pointer;">وَالْأَجْـــــــرَ وَالْقَبُـــــــــولَ وَالثَّوَابَــــــــــا</div>
+<div class="walid" id="11" onclick="fofo11()"style="text-align: right; cursor: pointer;">6-&nbsp;&nbsp;لِلنُّـــــــونِ إِنْ تَسْكُــــــــنْ وَلِلتَّنْوِيـــــــنِ</div>
+<div class="walid" id="12" onclick="fofo12()"style="text-align: left; cursor: pointer;">أَرْبَـــــعُ أَحْكَـــــــامٍ فَخُـــــــذْ تَبْيِيْنِــــــــي</div>
+<div class="walid" id="13" onclick="fofo13()"style="text-align: right; cursor: pointer;">7-&nbsp;&nbsp;فَــــــالأَوَّلُ الْإِظْهَـــــارُ قَبْـــــلَ أَحْــــرُفِ</div>
+<div class="walid" id="14" onclick="fofo14()"style="text-align: left; cursor: pointer;">لِلْحَلْــــــقِ سِــــتٌّ رُتِّبَـــــتْ فَلْتَعْــــــرِفِ</div>
+<div class="walid" id="15" onclick="fofo15()"style="text-align: right; cursor: pointer;">8-&nbsp;&nbsp;هَمْــــــزٌ فَهَـــــــاءٌ ثُــــمَّ عَيْــــــنٌ حَــــــاءُ</div>
+<div class="walid" id="16" onclick="fofo16()"style="text-align: left; cursor: pointer;">مُهْمَلَتَــــــــانِ ثُــــــــمَّ غَيْـــــــنٌ خَـــــــــاءُ</div>
+<div class="walid" id="17" onclick="fofo17()"style="text-align: right; cursor: pointer;">9-&nbsp;&nbsp;وَالثَّـــــانِ إِدْغَـــــــامٌ بِسِتَّــــــــةٍ أَتَـــــــــتْ</div>
+<div class="walid" id="18" onclick="fofo18()"style="text-align: left; cursor: pointer;">فِـي يَرْمَلُـــــونَ عِنْدَهُـــــــمْ قَـدْ ثَبَتَــــــتْ</div>
+<div class="walid" id="19" onclick="fofo19()"style="text-align: right; cursor: pointer;">10-&nbsp;لَــٰكِنَّهَـــــا قِسْمَـــــانِ قِسْــــــمٌ يُدْغَمَــــــا</div>
+<div class="walid" id="20" onclick="fofo20()"style="text-align: left; cursor: pointer;">فِيـــــــهِ بِغُنَّـــــــــةٍ بِـ:يَنْمُــــــــو عُلِمَـــــــــا</div>
+<div class="walid" id="21" onclick="fofo21()"style="text-align: right; cursor: pointer;">11-&nbsp;إِلَّا إِذَا كَانَـــــــــــا بِكِلْمَــــــــــــةٍ فَـــــــــلَا</div>
+<div class="walid" id="22" onclick="fofo22()"style="text-align: left; cursor: pointer;">تُدْغِـــــمْ كـَ:دُنْيَـــــا ثُـــمَّ صِنْــــوَانٌ تَــــلَا</div>
+<div class="walid" id="23" onclick="fofo23()"style="text-align: right; cursor: pointer;">12-&nbsp;وَالثَّـــــــانِ إِدْغَــــــــامٌ بِغَيْــــــــرِ غُنَّــــــــهْ</div>
+<div class="walid" id="24" onclick="fofo24()"style="text-align: left; cursor: pointer;">فِــــــي الـلَّامِ وَالــرَّا ثُــــــــــمَّ كَرِّرَنَّــــــــهْ</div>
+<div class="walid" id="25" onclick="fofo25()"style="text-align: right; cursor: pointer;">13-&nbsp;وَالثَّالِــــــثُ الْإِقْــلَابُ عِنْــــــــدَ الْبَــــــاءِ</div>
+<div class="walid" id="26" onclick="fofo26()"style="text-align: left; cursor: pointer;">مِيمًــــــــــا بِغُنَّــــــــــــةٍ مَـــعَ الْإِخْفَـــــــاءِ</div>
+<div class="walid" id="27" onclick="fofo27()"style="text-align: right; cursor: pointer;">14-&nbsp;وَالرَّابِــــعُ الْإِخْفَــــاءُ عِنْــــــدَ الْفَاضِــــلِ</div>
+<div class="walid" id="28" onclick="fofo28()"style="text-align: left; cursor: pointer;">مِـــنَ الْحُــــرُوفِ وَاجِــــــبٌ لِلْفَاضِــــلِ</div>
+<div class="walid" id="29" onclick="fofo29()"style="text-align: right; cursor: pointer;">15-&nbsp;فِـــي خَمْسَــــةٍ مِنْ بَعْــــدِ عَشْـــرٍ رَمْزُهَا</div>
+<div class="walid" id="30" onclick="fofo30()"style="text-align: left; cursor: pointer;">فِــي كِلْـــمِ هَـذَا البَيْـــتِ قَـــدْ ضَمَّنْتُهَـــا</div>
+<div class="walid" id="31" onclick="fofo31()"style="text-align: right; cursor: pointer;">16-&nbsp;صِفْ ذَا ثَنَا كَـمْ جَادَ شَخْـصٌ قَدْ سَمَـا</div>
+<div class="walid" id="32" onclick="fofo32()"style="text-align: left; cursor: pointer;">دُمْ طَيِّبــًا زِدْ فِـــي تُقًـــى ضَـــعْ ظَالِمَــــا</div>
+<div class="walid" id="33" onclick="fofo33()"style="text-align: right; cursor: pointer;">17-&nbsp;وَغُــــنَّ مِيمًـــــا ثُــــمَّ نُونًــــــــا شُــــــدِّدَا</div>
+<div class="walid" id="34" onclick="fofo34()"style="text-align: left; cursor: pointer;">وَسَـــــمِّ كُــــلًّا حَـــــرْفَ غُنَّــــــةٍ بَــــــدَا</div>
+<div class="walid" id="35" onclick="fofo35()"style="text-align: right; cursor: pointer;">18-&nbsp;وَالْمِيـــمُ إِنْ تَسْكُــنْ تَجِــي قَبْلَ الْهِجَـا</div>
+<div class="walid" id="36" onclick="fofo36()"style="text-align: left; cursor: pointer;">لَا أَلِـــــــفٍ لَيِّنَــــــــةٍ لِـــذِي الْحِجَـــــــــا</div>
+<div class="walid" id="37" onclick="fofo37()"style="text-align: right; cursor: pointer;">19-&nbsp;أَحْكَـــامُهَـــــا ثَلَاثَـــــــةٌ لِمَـــــنْ ضَبَــــطْ</div>
+<div class="walid" id="38" onclick="fofo38()"style="text-align: left; cursor: pointer;">إِخْفَــــــاءٌ اِدْغَــــــامٌ وَإِظْهَـــــــارٌ فَقَــــــطْ</div>
+<div class="walid" id="39" onclick="fofo39()"style="text-align: right; cursor: pointer;">20-&nbsp;فَـــالْأَوَّلُ الْإِخْفَــــــــاءُ عِنْــــــــدَ الْبَــــــاءِ</div>
+<div class="walid" id="40" onclick="fofo40()"style="text-align: left; cursor: pointer;">وَسَمِّــــــــهِ الشَّفْـــــــــــوِيَّ لِلْقُــــــــــــرَّاءِ</div>
+<div class="walid" id="41" onclick="fofo41()"style="text-align: right; cursor: pointer;">21-&nbsp;وَالثَّـــــانِ إِدْغَـــــــامٌ بِمِثْلِهَــــــــا أَتَـــــــى</div>
+<div class="walid" id="42" onclick="fofo42()"style="text-align: left; cursor: pointer;">وَسَــــــمِّ إِدْغَـــــامًــا صَغِيــــرًا يَــا فَتَـــى</div>
+<div class="walid" id="43" onclick="fofo43()"style="text-align: right; cursor: pointer;">22-&nbsp;وَالثَّالِـــــثُ الْإِظْهَـــــــارُ فِــــي الْبَقِيَّــــــهْ</div>
+<div class="walid" id="44" onclick="fofo44()"style="text-align: left; cursor: pointer;">مِـــــنْ أَحْـــــرُفٍ وَسَمِّهَـــــــا شَفْوِيَّــــــهْ</div>
+<div class="walid" id="45" onclick="fofo45()"style="text-align: right; cursor: pointer;">23-&nbsp;وَاحْـــذَرْ لَــدَى وَاوٍ وَفَــــا أَنْ تَخْتَفِــــي</div>
+<div class="walid" id="46" onclick="fofo46()"style="text-align: left; cursor: pointer;">لِقُرْبِهَــــــــا وَالِاتِّحَـــــــــــادِ فَاعْــــــــرِفِ</div>
+<div class="walid" id="47" onclick="fofo47()"style="text-align: right; cursor: pointer;">24-&nbsp;لِلَامِ أَلْ حَــــــالَانِ قَبْـــــــلَ الْأَحْـــــرُفِ</div>
+<div class="walid" id="48" onclick="fofo48()"style="text-align: left; cursor: pointer;">أُولَاهُــمَـــــا إِظْهَـــــارُهَــــــا فَلْتَعْـــــرِفِ</div>
+<div class="walid" id="49" onclick="fofo49()"style="text-align: right; cursor: pointer;">25-&nbsp;قَبْـــلَ ارْبَـــعٍ مَــعْ عَشْـــرَةٍ خُــذْ عِلْمَــــهُ</div>
+<div class="walid" id="50" onclick="fofo50()"style="text-align: left; cursor: pointer;">مِـنْ إِبْـــــغِ حَجَّــــكَ وَخَــــفْ عَقِيمَــــهُ</div>
+<div class="walid" id="51" onclick="fofo51()"style="text-align: right; cursor: pointer;">26-&nbsp;ثَانِيهِمَـــــــا إِدْغَامُهَــــــــا فِـــــي أَرْبَـــــــعِ</div>
+<div class="walid" id="52" onclick="fofo52()"style="text-align: left; cursor: pointer;">وَعَشْـــــرَةٍ أَيْضًـــــــا وَرَمْزَهَـــــــــا فَـــــعِ</div>
+<div class="walid" id="53" onclick="fofo53()"style="text-align: right; cursor: pointer;">27-&nbsp;طِبْ ثُمَّ صِـلْ رَحِمًـا تَفُزْ ضِفْ ذَا نِعَـمْ</div>
+<div class="walid" id="54" onclick="fofo54()"style="text-align: left; cursor: pointer;">دَعْ سُـــــوءَ ظَنٍّ زُرْ شَرِيفًــــــا لِلْكَـــــرَمْ</div>
+<div class="walid" id="55" onclick="fofo55()"style="text-align: right; cursor: pointer;">28-&nbsp;وَالــــلَّامَ الُاولَـــــى سَمِّهَـــــــا قَمْرِيَّــــــهْ</div>
+<div class="walid" id="56" onclick="fofo56()"style="text-align: left; cursor: pointer;">وَالــــلَّامَ الُاخْـــرَى سَمِّهَــــــا شَمْسِيَّــــهْ</div>
+<div class="walid" id="57" onclick="fofo57()"style="text-align: right; cursor: pointer;">29-&nbsp;وَأَظْهِـــــــــرَنَّ لاَمَ فِعْـــــــــــلٍ مُطْلَقَـــــــا</div>
+<div class="walid" id="58" onclick="fofo58()"style="text-align: left; cursor: pointer;">فِــي نَحْــــوِ قُـلْ نَعَــــمْ وَقُلْنَــــا وَالْتَقَـى</div>
+<div class="walid" id="59" onclick="fofo59()"style="text-align: right; cursor: pointer;">30-&nbsp;إِنْ فِـي الصِّفَـــاتِ وَالْمَخَــــارِجِ اتَّفَـــقْ</div>
+<div class="walid" id="60" onclick="fofo60()"style="text-align: left; cursor: pointer;">حَرْفَــــانِ فَالْمِثْـــــلَانِ فِيهِمَــــا أَحَـــــــقْ</div>
+<div class="walid" id="61" onclick="fofo61()"style="text-align: right; cursor: pointer;">31-&nbsp;وَإِنْ يَكُــــونَـــــا مَخْرَجًــــــــا تَقَارَبَـــــــــا</div>
+<div class="walid" id="62" onclick="fofo62()"style="text-align: left; cursor: pointer;">وَفِـــــي الصِّفَـــــــاتِ اخْتَلَفَــــــا يُلَقَّبَـــــا</div>
+<div class="walid" id="63" onclick="fofo63()"style="text-align: right; cursor: pointer;">32-&nbsp;مُتْقَـــــارِبَيْــــــنِ أَوْ يَكُونَـــــــــا اتَّفَقَـــــــــا</div>
+<div class="walid" id="64" onclick="fofo64()"style="text-align: left; cursor: pointer;">فِـــي مَخْـــرَجٍ دُونَ الصِّفَـــاتِ حُقِّقَـــــا</div>
+<div class="walid" id="65" onclick="fofo65()"style="text-align: right; cursor: pointer;">33-&nbsp;بِالْمُتَجَـــــــانِسَيْــــنِ ثُــــــمَّ إِنْ سَكَـــــــنْ</div>
+<div class="walid" id="66" onclick="fofo66()"style="text-align: left; cursor: pointer;">أَوَّلُ كُـــــــــلٍّ فَالصَّغِيــــــــرَ سَمِّيَــــــــــنْ</div>
+<div class="walid" id="67" onclick="fofo67()"style="text-align: right; cursor: pointer;">34-&nbsp;أَوْ حُـــرِّكَ الْحَرْفَـــــانِ فِي كُــــلٍّ فَقُــــلْ</div>
+<div class="walid" id="68" onclick="fofo68()"style="text-align: left; cursor: pointer;">كُــــلٌّ كَبِيــــــرٌ وَافْهَمَنْــــــــــهُ بِالْمُثُـــــــلْ</div>
+<div class="walid" id="69" onclick="fofo69()"style="text-align: right; cursor: pointer;">35-&nbsp;وَالْمَــــــدُّ أَصْلِـــــــيٌّ وَفَرْعِــــــــيٌّ لَـــــــهُ</div>
+<div class="walid" id="70" onclick="fofo70()"style="text-align: left; cursor: pointer;">وَسَـــــــــمِّ أَوَّلًا طَبِيعِيًّــــــــــا وَهُـــــــــــو</div>
+<div class="walid" id="71" onclick="fofo71()"style="text-align: right; cursor: pointer;">36-&nbsp;مَــــا لَا تَوَقُّــــــفٌ لَــــــهُ عَـلَى سَبَــــــبْ</div>
+<div class="walid" id="72" onclick="fofo72()"style="text-align: left; cursor: pointer;">وَلَا بِدُونِــــــــهِ الْحُـــــرُوفُ تُجْتَلَـــــــبْ</div>
+<div class="walid" id="73" onclick="fofo73()"style="text-align: right; cursor: pointer;">37-&nbsp;بَــلْ أَيُّ حَــرْفٍ غَيْـــرِ هَمْــزٍ أَوْ سُكُونْ</div>
+<div class="walid" id="74" onclick="fofo74()"style="text-align: left; cursor: pointer;">جَــــا بَعْــــدَ مَـــدٍّ فَالطَّبِيعِـــــيَّ يَكُـــــونْ</div>
+<div class="walid" id="75" onclick="fofo75()"style="text-align: right; cursor: pointer;">38-&nbsp;وَالْآخَــــرُ الْفَرْعِــــيُّ مَوْقُــــوفٌ عَـــــلَى</div>
+<div class="walid" id="76" onclick="fofo76()"style="text-align: left; cursor: pointer;">سَبَـــــبْ كَهَمْـــــزٍ أَوْ سُكُــــونٍ مُسْجَـلَا</div>
+<div class="walid" id="77" onclick="fofo77()"style="text-align: right; cursor: pointer;">39-&nbsp;حُــــــرُوفُـــــــــهُ ثَلَاثَـــــــــــةٌ فَعِيــهَـــــــــا</div>
+<div class="walid" id="78" onclick="fofo78()"style="text-align: left; cursor: pointer;">فِـــي لَفْـــظِ وَايٍ وَهْـــيَ فِــي نُوحِيهَــــا</div>
+<div class="walid" id="79" onclick="fofo79()"style="text-align: right; cursor: pointer;">40-&nbsp;وَالكَسْــــرُ قَبْـــلَ الْيَـــا وَقَبْـلَ الْوَاوِ ضَمْ</div>
+<div class="walid" id="80" onclick="fofo80()"style="text-align: left; cursor: pointer;">شَـــرْطٌ وَفَتْــــحٌ قَبْــــلَ أَلْـــــفٍ يُلْتَـــــزَمْ</div>
+<div class="walid" id="81" onclick="fofo81()"style="text-align: right; cursor: pointer;">41-&nbsp;وَاللِّيـــــنُ مِنْهَـــــا الْيَـــــا وَوَاوٌ سُكِّنَـــــــا</div>
+<div class="walid" id="82" onclick="fofo82()"style="text-align: left; cursor: pointer;">إِنِ انْفِتَــــــــاحٌ قَبْـــــــلَ كُـــــــلٍّ أُعْلِنَــــــا</div>
+<div class="walid" id="83" onclick="fofo83()"style="text-align: right; cursor: pointer;">42-&nbsp;لِلْمَــــــدِّ أَحْكَـــــــامٌ ثَلَاثَـــــــــةٌ تَــــــدُومْ</div>
+<div class="walid" id="84" onclick="fofo84()"style="text-align: left; cursor: pointer;">وَهْــــيَ الْوُجُــــوبُ وَالْجَــوَازُ وَاللُّـزُومْ</div>
+<div class="walid" id="85" onclick="fofo85()"style="text-align: right; cursor: pointer;">43-&nbsp;فَوَاجِـــــبٌ إِنْ جَــــاءَ هَمْـــــزٌ بَعْــدَ مَــدْ</div>
+<div class="walid" id="86" onclick="fofo86()"style="text-align: left; cursor: pointer;">فِـــــي كِلْمَـــــــةٍ وَذَا بِمُتَّصِـــــــلْ يُعَــــــدْ</div>
+<div class="walid" id="87" onclick="fofo87()"style="text-align: right; cursor: pointer;">44-&nbsp;وَجَــــــائِـزٌ مَــــدٌّ وَقَصْــــــرٌ إِنْ فُصِــــــلْ</div>
+<div class="walid" id="88" onclick="fofo88()"style="text-align: left; cursor: pointer;">كُــــــلٌّ بِكِلْمَـــــــــةٍ وَهَــذَا الْمُنْفَصِــــــلْ</div>
+<div class="walid" id="89" onclick="fofo89()"style="text-align: right; cursor: pointer;">45-&nbsp;وَمِثْــــــلُ ذَا إِنْ عَـــــــرَضَ السُّكُـــــــونُ</div>
+<div class="walid" id="90" onclick="fofo90()"style="text-align: left; cursor: pointer;">وَقْفًـــــــــا كَــتَعْلَمُــــــــــونَ نَسْتَعِيـــــــــنُ</div>
+<div class="walid" id="91" onclick="fofo91()"style="text-align: right; cursor: pointer;">46-&nbsp;أَوْ قُــــدِّمَ الْهَمْـــــــزُ عَـــــلَى الْمَــــدِّ وَذَا</div>
+<div class="walid" id="92" onclick="fofo92()"style="text-align: left; cursor: pointer;">بَــــــدَلْ كَــآمَنُـــــــوا وَإِيمَانًـــــــــا خُـــــذَا</div>
+<div class="walid" id="93" onclick="fofo93()"style="text-align: right; cursor: pointer;">47-&nbsp;وَلَازِمٌ إِنِ السُّــكُــــــــــــونُ أُصِّـــــــــــــلَا</div>
+<div class="walid" id="94" onclick="fofo94()"style="text-align: left; cursor: pointer;">وَصْـــــلًا وَوَقْفًـــــا بَعْـــدَ مَـــدٍّ طُــــــوِّلَا</div>
+<div class="walid" id="95" onclick="fofo95()"style="text-align: right; cursor: pointer;">48-&nbsp;أَقْسَــــــــــامُ لَازِمٍ لَــدَيْهِـــــــــمْ أَرْبَعَـــــــهْ</div>
+<div class="walid" id="96" onclick="fofo96()"style="text-align: left; cursor: pointer;">وَتِلْـــــــكَ كِلْمِــــــيٌّ وَحَرْفِـــــــيٌّ مَعَــــهْ</div>
+<div class="walid" id="97" onclick="fofo97()"style="text-align: right; cursor: pointer;">49-&nbsp;كِـــــلَاهُمَـــــــــا مُخَفَّـــــــــفٌ مُثَقَّـــــــــلُ</div>
+<div class="walid" id="98" onclick="fofo98()"style="text-align: left; cursor: pointer;">فَــــــــــهَذِهِ أَرْبَعَــــــــــــــةٌ تُـفَـصَّــــــــــــلُ</div>
+<div class="walid" id="99" onclick="fofo99()"style="text-align: right; cursor: pointer;">50-&nbsp;فَــــإِنْ بِكِلْمَــــــــةٍ سُكُــــــونٌ اجْتَمَـــــــعْ</div>
+<div class="walid" id="100" onclick="fofo100()"style="text-align: left; cursor: pointer;">مَـــعْ حَــرْفِ مَـدٍّ فَهْـــــوَ كِلْمِـــيٌّ وَقَـــعْ</div>
+<div class="walid" id="101" onclick="fofo101()"style="text-align: right; cursor: pointer;">51-&nbsp;أَوْ فِـــــي ثُلَاثِـــــيِّ الْحُـــــرُوفِ وُجِـــدَا</div>
+<div class="walid" id="102" onclick="fofo102()"style="text-align: left; cursor: pointer;">وَالْمَـــــدُّ وَسْطُـــــــهُ فَحَرْفِــــــــيٌّ بَــــــدَا</div>
+<div class="walid" id="103" onclick="fofo103()"style="text-align: right; cursor: pointer;">52-&nbsp;كِــلَاهُــمَـــــــا مُثَقَّـــــــلٌ إِنْ أُدْغِمَـــــــــــا</div>
+<div class="walid" id="104" onclick="fofo104()"style="text-align: left; cursor: pointer;">مَخَفَّــــــــفٌ كُـــــلٌّ إِذَا لَـــــمْ يُدْغَمَـــــــا</div>
+<div class="walid" id="105" onclick="fofo105()"style="text-align: right; cursor: pointer;">53-&nbsp;وَالـــلَّازِمُ الْحَرْفِـــــــــيُّ أَوَّلَ السُّــــــــوَرْ</div>
+<div class="walid" id="106" onclick="fofo106()"style="text-align: left; cursor: pointer;">وُجُــــــودُهُ وَفِــــي ثَمَــــــانٍ انْحَصَـــــــرْ</div>
+<div class="walid" id="107" onclick="fofo107()"style="text-align: right; cursor: pointer;">54-&nbsp;يَجْمَعُهَــــا حُـــرُوفُ كَــمْ عَسَــلْ نَقَصْ</div>
+<div class="walid" id="108" onclick="fofo108()"style="text-align: left; cursor: pointer;">وَعَيْـــنُ ذُو وَجْهَيْــــنِ والطُّــولُ أَخَـصْ</div>
+<div class="walid" id="109" onclick="fofo109()"style="text-align: right; cursor: pointer;">55-&nbsp;وَمَــا سِــوَى الحَــرْفِ الثُّلَاثِــي لَا أَلِفْ</div>
+<div class="walid" id="110" onclick="fofo110()"style="text-align: left; cursor: pointer;">فَــــــــمَدُّهُ مَـــــــدٌّ طَبِيعِـــــــــيٌّ أُلِــــــــفْ</div>
+<div class="walid" id="111" onclick="fofo111()"style="text-align: right; cursor: pointer;">56-&nbsp;وَذَاكَ أَيْضًـــــا فِـــي فَوَاتِــــــحِ السُّـــــوَرْ</div>
+<div class="walid" id="112" onclick="fofo112()"style="text-align: left; cursor: pointer;">فِـــي لَفْـــظِ حَــيٌّ طَاهِـــرٌ قَـدِ انْحَصَــــرْ</div>
+<div class="walid" id="113" onclick="fofo113()"style="text-align: right; cursor: pointer;">57-&nbsp;وَيَجْمَــــعُ الْفَوَاتِــــــحَ الْأَرْبَـــــعْ عَشَــــرْ</div>
+<div class="walid" id="114" onclick="fofo114()"style="text-align: left; cursor: pointer;">صِلْــــهُ سُحَيْـــرًا مَنْ قَطَعْـــكَ ذَا اشْتَهَرْ</div>
+<div class="walid" id="115" onclick="fofo115()"style="text-align: right; cursor: pointer;">58-&nbsp;وَتَـــــــمَّ ذَا النَّظْــــــــــمُ بِحَمْــــــــــدِ اللَّهِ</div>
+<div class="walid" id="116" onclick="fofo116()"style="text-align: left; cursor: pointer;">عَـــــــلَى تَمَامِـــــــــهِ بِــــــلَا تَنَاهِــــــــــي</div>
+<div class="walid" id="117" onclick="fofo117()"style="text-align: right; cursor: pointer;">59-&nbsp;أَبْيَـــــاتُـــهُ نَـــــدٌّ بَــــــدَا لِـــذِي النُّهَــــــى</div>
+<div class="walid" id="118" onclick="fofo118()"style="text-align: left; cursor: pointer;">تَــارِيخُــــــهَا بُشْــــــرَى لِمَـــــنْ يُتْقِنُهَــــا</div>
+<div class="walid" id="119" onclick="fofo119()"style="text-align: right; cursor: pointer;">60-&nbsp;ثُــــــمَّ الصَّــــــــلَاةُ وَالسَّــــــلَامُ أَبَـــــــدَا</div>
+<div class="walid" id="120" onclick="fofo120()"style="text-align: left; cursor: pointer;">عَــــــلَى خِتَـــــــامِ الْأَنْبِيَــــــاءِ أَحْمَــــــدَا</div>
+<div class="walid" id="121" onclick="fofo121()"style="text-align: right; cursor: pointer;">61-&nbsp;وَالْآلِ وَالصَّــــــحْبِ وَكُـــــــلِّ تَابِــــــــعِ</div>
+<div class="walid" id="122" onclick="fofo122()"style="text-align: left; cursor: pointer;">وَكُـــــــلِّ قَــــــــارِئٍ وَكُـــــــلِّ سَامِـــــــعِ</div>
+
+
+<br>
+<br>
+</div>
+<button  class="clicktest" type="button" onclick="mytest()">إظهار الشطر</button>
+<button  class="clicktest1"  type="button" onclick="se()"></button>
+<button  class="clicktest2" type="button" onclick="openNav()"></button>
+<button  class="clicktest3" type="button" onclick="we()"></button>
+<button  class="clicktest4" type="button" onclick="wee()"></button>
+
+ <div  id="mySidenav1"  class="sidenav1">
+  <div>يرجى الاختيار من القائمة</div>
+   <div>من الباب</div>
+ <select class="puti" id="mySelect">
+  <option value="1">الْمُقَدِّمَةُ</option>
+  <option value="11">أَحْكَامُ النُّونِ السَّاكِنَةِ وَالتَّنْوينِ</option>
+  <option value="33">أَحْكَامُ الْمِيمِ وَالنُّونِ الْمُشَدَّدَتَيْنِ</option>
+  <option value="35">أَحْكَامُ الْمِيمِ السَّاكِنَةِ</option>
+  <option value="47">حُكْمُ لاَمِ (أَلْ) وَلاَمِ الْفِعْلِ</option>
+  <option value="59">فِي الْمِثْلَيْنِ وَالْمُتَقَارِبَيْنِ وَالْمُتَجَانِسَيْنِ</option>
+  <option value="69">أَقْسَامُ المَدِّ</option>
+  <option value="83">أَحْكَامُ الْمَدِّ</option>
+  <option value="95">أَقْسَامُ المَدِّ اللَّازِمِ</option>
+  <option value="115">خَاتِمَةٌ</option>
+</select>
+ <div>إلى الباب</div>
+<select class="puti" id="mySelect1">
+  <option value="11">الْمُقَدِّمَةُ</option>
+  <option value="33">أَحْكَامُ النُّونِ السَّاكِنَةِ وَالتَّنْوينِ</option>
+  <option value="35">أَحْكَامُ الْمِيمِ وَالنُّونِ الْمُشَدَّدَتَيْنِ</option>
+  <option value="47">أَحْكَامُ الْمِيمِ السَّاكِنَةِ</option>
+  <option value="59">حُكْمُ لاَمِ (أَلْ) وَلاَمِ الْفِعْلِ</option>
+  <option value="69">فِي الْمِثْلَيْنِ وَالْمُتَقَارِبَيْنِ وَالْمُتَجَانِسَيْنِ</option>
+  <option value="83">أَقْسَامُ المَدِّ</option>
+  <option value="95">أَحْكَامُ الْمَدِّ</option>
+  <option value="115">أَقْسَامُ المَدِّ اللَّازِمِ</option>
+  <option value="123">خَاتِمَةٌ</option>
+ 
+</select>
+  <button  class="clicktest5" type="button" onclick="weee()">حفظ و رجوع</button>
+ </div>
+ <div id="mySidenav"  class="sidenav">
+  
+<a href="#" onclick="myFunction()">20</a>
+<a href="#" onclick="myFunction1()">21</a>
+<a href="#" onclick="myFunction2()">22</a>
+<a href="#" onclick="myFunction3()">23</a>
+<a href="#" onclick="myFunction4()">24</a>
+<a href="#" onclick="myFunction5()">25</a>
+<a href="#" onclick="myFunction6()">26</a>
+<a href="#" onclick="myFunction7()">27</a>
+<a href="#" onclick="myFunction8()">28</a>
+<a href="#" onclick="myFunction9()">29</a>
+<a href="#" onclick="myFunction10()">30</a>
+<a href="#" onclick="myFunction11()">31</a>
+<a href="#" onclick="myFunction12()">32</a>
+<a href="#" onclick="myFunction13()">33</a>
+<a href="#" onclick="myFunction14()">34</a>
+<a href="#" onclick="myFunction15()">35</a>
+<a href="#" onclick="myFunction16()">36</a>
+<a href="#" onclick="myFunction17()">37</a>
+<a href="#" onclick="myFunction18()">38</a>
+<a href="#" onclick="myFunction19()">39</a>
+<a href="#" onclick="myFunction20()">40</a>
+<a href="#" onclick="myFunction21()">41</a>
+<a href="#" onclick="myFunction22()">42</a>
+<a href="#" onclick="myFunction23()">43</a> 
+<a href="#" onclick="myFunction23()"></a> 
+<a href="#" onclick="myFunction23()"></a>
+
+</div>
+<script>
+
+
+
+function mytest() {
+     var x = parseFloat(document.getElementById("mySelect").value);
+     var y = parseFloat(document.getElementById("mySelect1").value);
+	if (x < y) {
+    var randomItem=Math.floor(Math.random() * (y - x)) + x;
+    document.getElementById(randomItem).style.color= "black";
+    var elmnt = document.getElementById(randomItem);
+	elmnt.scrollIntoView();
+} else {
+    alert("نبغي أن يكون الباب الأول قبل الباب الثاني");
+}
+ 
+}
+function fofo1() {
+document.getElementById("1").style.color= "black";
+}
+function fofo2() {
+document.getElementById("2").style.color= "black";
+}
+function fofo3() {
+document.getElementById("3").style.color= "black";
+}
+function fofo4() {
+document.getElementById("4").style.color= "black";
+}
+function fofo5() {
+document.getElementById("5").style.color= "black";
+}
+function fofo6() {
+document.getElementById("6").style.color= "black";
+}
+function fofo7() {
+document.getElementById("7").style.color= "black";
+}
+function fofo8() {
+document.getElementById("8").style.color= "black";
+}
+function fofo9() {
+document.getElementById("9").style.color= "black";
+}
+function fofo10() {
+document.getElementById("10").style.color= "black";
+}
+function fofo11() {
+document.getElementById("11").style.color= "black";
+}
+function fofo12() {
+document.getElementById("12").style.color= "black";
+}
+function fofo13() {
+document.getElementById("13").style.color= "black";
+}
+function fofo14() {
+document.getElementById("14").style.color= "black";
+}
+function fofo15() {
+document.getElementById("15").style.color= "black";
+}
+function fofo16() {
+document.getElementById("16").style.color= "black";
+}
+function fofo17() {
+document.getElementById("17").style.color= "black";
+}
+function fofo18() {
+document.getElementById("18").style.color= "black";
+}
+function fofo19() {
+document.getElementById("19").style.color= "black";
+}
+function fofo20() {
+document.getElementById("20").style.color= "black";
+}
+function fofo21() {
+document.getElementById("21").style.color= "black";
+}
+function fofo22() {
+document.getElementById("22").style.color= "black";
+}
+function fofo23() {
+document.getElementById("23").style.color= "black";
+}
+function fofo24() {
+document.getElementById("24").style.color= "black";
+}
+function fofo25() {
+document.getElementById("25").style.color= "black";
+}
+function fofo26() {
+document.getElementById("26").style.color= "black";
+}
+function fofo27() {
+document.getElementById("27").style.color= "black";
+}
+function fofo28() {
+document.getElementById("28").style.color= "black";
+}
+function fofo29() {
+document.getElementById("29").style.color= "black";
+}
+function fofo30() {
+document.getElementById("30").style.color= "black";
+}
+function fofo31() {
+document.getElementById("31").style.color= "black";
+}
+function fofo32() {
+document.getElementById("32").style.color= "black";
+}
+function fofo33() {
+document.getElementById("33").style.color= "black";
+}
+function fofo34() {
+document.getElementById("34").style.color= "black";
+}
+function fofo35() {
+document.getElementById("35").style.color= "black";
+}
+function fofo36() {
+document.getElementById("36").style.color= "black";
+}
+function fofo37() {
+document.getElementById("37").style.color= "black";
+}
+function fofo38() {
+document.getElementById("38").style.color= "black";
+}
+function fofo39() {
+document.getElementById("39").style.color= "black";
+}
+function fofo40() {
+document.getElementById("40").style.color= "black";
+}
+function fofo41() {
+document.getElementById("41").style.color= "black";
+}
+function fofo42() {
+document.getElementById("42").style.color= "black";
+}
+function fofo43() {
+document.getElementById("43").style.color= "black";
+}
+function fofo44() {
+document.getElementById("44").style.color= "black";
+}
+function fofo45() {
+document.getElementById("45").style.color= "black";
+}
+function fofo46() {
+document.getElementById("46").style.color= "black";
+}
+function fofo47() {
+document.getElementById("47").style.color= "black";
+}
+function fofo48() {
+document.getElementById("48").style.color= "black";
+}
+function fofo49() {
+document.getElementById("49").style.color= "black";
+}
+function fofo50() {
+document.getElementById("50").style.color= "black";
+}
+function fofo51() {
+document.getElementById("51").style.color= "black";
+}
+function fofo52() {
+document.getElementById("52").style.color= "black";
+}
+function fofo53() {
+document.getElementById("53").style.color= "black";
+}
+function fofo54() {
+document.getElementById("54").style.color= "black";
+}
+function fofo55() {
+document.getElementById("55").style.color= "black";
+}
+function fofo56() {
+document.getElementById("56").style.color= "black";
+}
+function fofo57() {
+document.getElementById("57").style.color= "black";
+}
+function fofo58() {
+document.getElementById("58").style.color= "black";
+}
+function fofo59() {
+document.getElementById("59").style.color= "black";
+}
+function fofo60() {
+document.getElementById("60").style.color= "black";
+}
+function fofo61() {
+document.getElementById("61").style.color= "black";
+}
+function fofo62() {
+document.getElementById("62").style.color= "black";
+}
+function fofo63() {
+document.getElementById("63").style.color= "black";
+}
+function fofo64() {
+document.getElementById("64").style.color= "black";
+}
+function fofo65() {
+document.getElementById("65").style.color= "black";
+}
+function fofo66() {
+document.getElementById("66").style.color= "black";
+}
+function fofo67() {
+document.getElementById("67").style.color= "black";
+}
+function fofo68() {
+document.getElementById("68").style.color= "black";
+}
+function fofo69() {
+document.getElementById("69").style.color= "black";
+}
+function fofo70() {
+document.getElementById("70").style.color= "black";
+}
+function fofo71() {
+document.getElementById("71").style.color= "black";
+}
+function fofo72() {
+document.getElementById("72").style.color= "black";
+}
+function fofo73() {
+document.getElementById("73").style.color= "black";
+}
+function fofo74() {
+document.getElementById("74").style.color= "black";
+}
+function fofo75() {
+document.getElementById("75").style.color= "black";
+}
+function fofo76() {
+document.getElementById("76").style.color= "black";
+}
+function fofo77() {
+document.getElementById("77").style.color= "black";
+}
+function fofo78() {
+document.getElementById("78").style.color= "black";
+}
+function fofo79() {
+document.getElementById("79").style.color= "black";
+}
+function fofo80() {
+document.getElementById("80").style.color= "black";
+}
+function fofo81() {
+document.getElementById("81").style.color= "black";
+}
+function fofo82() {
+document.getElementById("82").style.color= "black";
+}
+function fofo83() {
+document.getElementById("83").style.color= "black";
+}
+function fofo84() {
+document.getElementById("84").style.color= "black";
+}
+function fofo85() {
+document.getElementById("85").style.color= "black";
+}
+function fofo86() {
+document.getElementById("86").style.color= "black";
+}
+function fofo87() {
+document.getElementById("87").style.color= "black";
+}
+function fofo88() {
+document.getElementById("88").style.color= "black";
+}
+function fofo89() {
+document.getElementById("89").style.color= "black";
+}
+function fofo90() {
+document.getElementById("90").style.color= "black";
+}
+function fofo91() {
+document.getElementById("91").style.color= "black";
+}
+function fofo92() {
+document.getElementById("92").style.color= "black";
+}
+function fofo93() {
+document.getElementById("93").style.color= "black";
+}
+function fofo94() {
+document.getElementById("94").style.color= "black";
+}
+function fofo95() {
+document.getElementById("95").style.color= "black";
+}
+function fofo96() {
+document.getElementById("96").style.color= "black";
+}
+function fofo97() {
+document.getElementById("97").style.color= "black";
+}
+function fofo98() {
+document.getElementById("98").style.color= "black";
+}
+function fofo99() {
+document.getElementById("99").style.color= "black";
+}
+function fofo100() {
+document.getElementById("100").style.color= "black";
+}
+function fofo101() {
+document.getElementById("101").style.color= "black";
+}
+function fofo102() {
+document.getElementById("102").style.color= "black";
+}
+function fofo103() {
+document.getElementById("103").style.color= "black";
+}
+function fofo104() {
+document.getElementById("104").style.color= "black";
+}
+function fofo105() {
+document.getElementById("105").style.color= "black";
+}
+function fofo106() {
+document.getElementById("106").style.color= "black";
+}
+function fofo107() {
+document.getElementById("107").style.color= "black";
+}
+function fofo108() {
+document.getElementById("108").style.color= "black";
+}
+function fofo109() {
+document.getElementById("109").style.color= "black";
+}
+function fofo110() {
+document.getElementById("110").style.color= "black";
+}
+function fofo111() {
+document.getElementById("111").style.color= "black";
+}
+function fofo112() {
+document.getElementById("112").style.color= "black";
+}
+function fofo113() {
+document.getElementById("113").style.color= "black";
+}
+function fofo114() {
+document.getElementById("114").style.color= "black";
+}
+function fofo115() {
+document.getElementById("115").style.color= "black";
+}
+function fofo116() {
+document.getElementById("116").style.color= "black";
+}
+function fofo117() {
+document.getElementById("117").style.color= "black";
+}
+function fofo118() {
+document.getElementById("118").style.color= "black";
+}
+function fofo119() {
+document.getElementById("119").style.color= "black";
+}
+function fofo120() {
+document.getElementById("120").style.color= "black";
+}
+function fofo121() {
+document.getElementById("121").style.color= "black";
+}
+function fofo122() {
+document.getElementById("122").style.color= "black";
+}
+  
+     
+
+
+
+
+function se() {
+window.open ('index.html','_self',false)
+    
+}
+function we() {
+ for (i = 1; i < 123; i++) {
+ document.getElementById(i).style.color= "transparent";  
+}
+ window.scrollTo(0, 0);
+}
+function openNav() {
+    document.getElementById("mySidenav").style.width = "60px";
+	
+}
+function wee() {
+    document.getElementById("mySidenav1").style.width = "100%";
+	
+}
+function weee() {
+    document.getElementById("mySidenav1").style.width = "0";
+	
+}
+function myFunction() {
+   document.getElementById("testhall").style.fontSize ="20px";
+   document.getElementById("mySidenav").style.width = "0"; 
+}
+  
+function myFunction1() {
+  document.getElementById("testhall").style.fontSize ="21px";
+   document.getElementById("mySidenav").style.width = "0"; 
+  
+}
+function myFunction2() {
+    document.getElementById("testhall").style.fontSize ="22px";
+   document.getElementById("mySidenav").style.width = "0"; 
+ 
+}
+function myFunction3() {
+
+ document.getElementById("testhall").style.fontSize ="23px";
+   document.getElementById("mySidenav").style.width = "0"; 
+  
+}
+function myFunction4() {
+  
+   document.getElementById("testhall").style.fontSize ="24px";
+   document.getElementById("mySidenav").style.width = "0"; 
+}
+function myFunction5() {
+    document.getElementById("testhall").style.fontSize ="25px";
+   document.getElementById("mySidenav").style.width = "0"; 
+  
+}
+function myFunction6() {
+   document.getElementById("testhall").style.fontSize ="26px";
+   document.getElementById("mySidenav").style.width = "0"; 
+
+}
+function myFunction7() {
+   document.getElementById("testhall").style.fontSize ="27px";
+   document.getElementById("mySidenav").style.width = "0"; 
+}
+function myFunction8() {
+ document.getElementById("testhall").style.fontSize ="28px";
+   document.getElementById("mySidenav").style.width = "0"; 
+
+}
+function myFunction9() {
+ document.getElementById("testhall").style.fontSize ="29px";
+   document.getElementById("mySidenav").style.width = "0"; 
+ 
+}
+function myFunction10() {
+   document.getElementById("testhall").style.fontSize ="30px";
+   document.getElementById("mySidenav").style.width = "0"; 
+
+}
+function myFunction11() {
+ document.getElementById("testhall").style.fontSize ="31px";
+   document.getElementById("mySidenav").style.width = "0"; 
+  
+}
+function myFunction12() {
+   document.getElementById("testhall").style.fontSize ="32px";
+   document.getElementById("mySidenav").style.width = "0"; 
+  
+}
+function myFunction13() {
+   document.getElementById("testhall").style.fontSize ="33px";
+   document.getElementById("mySidenav").style.width = "0"; 
+
+}
+function myFunction14() {
+    document.getElementById("testhall").style.fontSize ="34px";
+   document.getElementById("mySidenav").style.width = "0"; 
+  
+}
+function myFunction15() {
+  document.getElementById("testhall").style.fontSize ="35px";
+   document.getElementById("mySidenav").style.width = "0"; 
+  
+}
+function myFunction16() {
+   document.getElementById("testhall").style.fontSize ="36px";
+   document.getElementById("mySidenav").style.width = "0"; 
+  
+}
+function myFunction17() {
+   document.getElementById("testhall").style.fontSize ="37px";
+   document.getElementById("mySidenav").style.width = "0"; 
+  
+}
+function myFunction18() {
+   document.getElementById("testhall").style.fontSize ="38px";
+   document.getElementById("mySidenav").style.width = "0"; 
+   
+}
+function myFunction19() {
+   document.getElementById("testhall").style.fontSize ="39px";
+   document.getElementById("mySidenav").style.width = "0"; 
+ 
+}
+function myFunction20() {
+   document.getElementById("testhall").style.fontSize ="40px";
+   document.getElementById("mySidenav").style.width = "0"; 
+  
+}
+function myFunction21() {
+   document.getElementById("testhall").style.fontSize ="41px";
+   document.getElementById("mySidenav").style.width = "0"; 
+  
+}
+function myFunction22() {
+    document.getElementById("testhall").style.fontSize ="42px";
+   document.getElementById("mySidenav").style.width = "0"; 
+
+}
+function myFunction23() {
+ document.getElementById("testhall").style.fontSize ="43px";
+   document.getElementById("mySidenav").style.width = "0"; 
+   
+}
+</script>
+
+</body>
+</html>

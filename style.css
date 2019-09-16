@@ -1,0 +1,91 @@
+@import url(amiri.css);
+@import url(aaa.css);
+*{
+  direction:rtl;
+  color:#444;
+}
+
+h3{
+  
+  
+  
+}
+.accordion {
+    background-color: #eded74;
+    font-family: 'Scheherazade', serif;
+    cursor: pointer;
+    padding: auto;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 26px;
+    transition: 0.4s;
+	margin-top: 2px;
+	border-radius: 8px;
+}
+
+.active, .accordion:hover {
+    background-color: #bcc90e; 
+}
+.accordion1 {
+    background-color: #eded74;
+    font-family: 'Scheherazade', serif;
+    cursor: pointer;
+    padding: auto;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 26px;
+    transition: 0.4s;
+	margin-top: 2px;
+	border-radius: 8px;
+}
+
+.active, .accordion1:hover {
+    background-color: #bcc90e; 
+}
+.passage{
+	font-family: 'Scheherazade', serif;
+	line-height: 140%;
+	font-size: 20px;
+}
+.amiri{
+	font-family: 'Scheherazade', serif;
+	 line-height: 140%;
+	 margin-top: 10px;
+}
+.sidenav10 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+	border-left: 1px solid #bcc90e;
+	border-bottom: 1px solid #bcc90e;
+	font-family: 'Scheherazade', serif;
+    right: 0;
+    background-color: #ffffe0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    text-align:center;
+	
+}
+.sidenav10 a {
+    padding: 1px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+	
+
+}
+
+.sidenav10 a:hover{
+    color: red;
+}
+.lisitta{
+font-family: 'Scheherazade', serif;	
+	
+}
